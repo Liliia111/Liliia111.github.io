@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Project 2</title>
+    <style>
+
+    body {
+      background-color:#bfbfbf;
+      font-family: 'Lato', sans-serif;
+      color: #50514F;
+      text-align: center;
+    }
+
+
+    form {
+      width: 450px;
+      margin: 10% auto;
+    }
+
+
+    .header {
+      font-size: 45px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+
+
+    .description {
+      font-size: 20px;
+      letter-spacing: 1px;
+      line-height: 1.3em;
+      margin: -2px 0 45px;
+    }
+
+
+    .input {
+      display: flex;
+      align-items: center;
+    }
+
+
+    .button {
+      height: 44px;
+      border: none;
+    }
+
+
+    #email {
+      width: 70%;
+      background: #FDFCFB;
+      font-family: inherit;
+      color: #737373;
+      letter-spacing: 1px;
+      text-indent: 5%;
+      border-radius: 5px 0 0 5px;
+    }
+
+
+    #submit {
+      width: 26%;
+      height: 46px;
+      background: #d45d7d;
+      font-family: inherit;
+      font-weight: bold;
+      color: #FDFCFB;
+
+      letter-spacing: 1px;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      transition: background .3s ease-in-out;
+    }
+
+
+    #submit:hover {
+      background: #d45d7d;
+    }
+
+
+    input:focus {
+      outline: none;
+      outline: 2px solid #E86C8D;
+      box-shadow: 0 0 2px #E86C8D;
+    }
+
+
+</style>
+</head>
+
+<body>
+
+
+    <iframe src="menu.html" width="100%" style="height: 165px; border:0; "></iframe>
+
+    <!-- End Nav -->
+
+    <form action="post.php" method="post" name="sign up for beta form">
+      <div class="header">
+         <p>SIGN UP</p>
+      </div>
+      <div class="description">
+        <p>POST form example.</p>
+      </div>
+      <div class="input">
+        <input type="text" class="button" id="email" name="email" placeholder="NAME">
+        <input type="submit" class="button" id="submit" value="SUBMIT">
+      </div>
+    </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
