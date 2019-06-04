@@ -1,0 +1,261 @@
+.carousel-item {
+  height: 85vh;
+  min-height: 350px;
+
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+*{padding:0;margin:0;}
+
+body{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	background-color:#F5F5F5;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+  background: #000;  /* fallback for old browsers */
+
+
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:22px;
+}
+a {
+   text-decoration:none;
+   color: inherit;
+}
+
+* {
+}
+
+* {box-sizing: border-box;}
+
+
+
+
+header {
+  background-color: rgba(0,0,0,.5);
+  font-size: 1.5em;
+  text-align: center;
+
+}
+
+.panel-wrapper {
+  position: relative;
+}
+
+.btn {
+  color: #fff;
+  background: #000;
+  border-radius: 1.5em;
+  left: 40%;
+  padding: 1em;
+  text-decoration: none;
+  width: 20%;
+}
+.show, .hide {
+  position: absolute;
+  bottom: -1em;
+  z-index: 100;
+  text-align: center;
+}
+
+.hide {display: none;}
+.show:target {display: none;}
+.show:target ~ .hide {display: block;}
+.show:target ~ .panel {
+   max-height: 2000px;
+}
+.show:target ~ .fade {
+
+}
+
+.panel {
+
+  position: relative;
+  margin: 2em auto;
+  width: 80%;
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height .5s ease;
+}
+.panel1 {
+
+  position: relative;
+  margin: 2em auto;
+  width: 80%;
+
+  overflow: hidden;
+  transition: max-height .5s ease;
+}
+
+.fade {
+  background: linear-gradient(to bottom, rgba(254, 254, 254, 1)0%, rgba(209, 209, 209,1)49%, rgba(219, 219,219,1)50%);
+  height: 100px;
+  margin-top: -100px;
+  position: relative;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding: 0 4px;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+
+}
+.frame {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: flex-start;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.form{
+  display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+}
+
+input[type=text], select {
+    width: 100%;
+    font-family: inherit;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[type=password], select {
+    width: 100%;
+    font-family: inherit;
+    padding: 12px 20px;
+    margin: 8px 0;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #191919;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+
+}
+
+input[type=submit]:hover {
+    background-color:#3d3d3d;
+}
+
+.form1 {
+    width: 450px;
+    margin: 2% auto;
+}
+
+#map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+
+       .footer {
+         background: #061D25;
+         padding: 10px 0;
+       }
+       .footer a {
+         color: #70726F;
+         font-size: 20px;
+         padding: 10px;
+         border-right: 1px solid #70726F;
+         transition: all .5s ease;
+       }
+       .footer a:first-child {
+         border-left: 1px solid #70726F;
+       }
+       .footer a:hover {
+         color: white;
+       }
+
+
+
+       img {
+           width: 400px;
+           height: 300px;
+
+       }
+       .placeholder {
+           border: 1px solid green;
+           background-color: white;
+           -webkit-box-shadow: 0px 0px 10px #888;
+           -moz-box-shadow: 0px 0px 10px #888;
+           box-shadow: 0px 0px 10px #888;
+       }
+       .tile {
+           height: 100px;
+       }
+       .grid {
+           margin-top: 1em;
+       }
