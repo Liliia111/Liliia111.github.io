@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./s.css">
+<title>lab4</title>
+
+
+</head>
+<style>
+  #div1 {
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  #div2
+  {
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+</style>
+<body>
+
+  <!-- Navigation -->
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background:rgba(0, 0, 0, 0.8);">
+    <div class="container">
+      <a class="navbar-brand" href="#">LAB 4</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive" >
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/RCAhiGJsUUE/1920x1080')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="display-4">First Slide</h3>
+            <p class="lead">This is a description for the first slide.</p>
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1920x1080')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="display-4">Second Slide</h3>
+            <p class="lead">This is a description for the second slide.</p>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('https://source.unsplash.com/O7fzqFEfLlo/1920x1080')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="display-4">Third Slide</h3>
+            <p class="lead">This is a description for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+  </header>
+
+
+  <!-- Page Content -->
+  <div class="panel-wrapper">
+    <a href="#show" class="show btn" id="show">Show Full Article</a>
+    <a href="#hide" class="hide btn" id="hide">Hide Full Article</a>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra. Tincidunt eget nullam non nisi est sit amet facilisis magna. Ut aliquam purus sit amet. Imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor. Viverra mauris in aliquam sem fringilla ut morbi. Praesent tristique magna sit amet purus. Semper quis lectus nulla at volutpat diam. Semper auctor neque vitae tempus quam. Purus ut faucibus pulvinar elementum integer enim neque.</p>
+
+      <p>  Neque aliquam vestibulum morbi blandit. Gravida rutrum quisque non tellus orci. Sagittis aliquam malesuada bibendum arcu vitae elementum. Gravida cum sociis natoque penatibus et magnis dis. Purus sit amet luctus venenatis lectus magna. Posuere urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Ut diam quam nulla porttitor massa. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Consectetur libero id faucibus nisl tincidunt eget nullam non nisi. Pellentesque elit ullamcorper dignissim cras tincidunt. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Non diam phasellus vestibulum lorem sed risus. Bibendum est ultricies integer quis auctor elit sed. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Gravida cum sociis natoque penatibus. Nisl purus in mollis nunc sed. Cursus risus at ultrices mi tempus. Massa tincidunt nunc pulvinar sapien.
+      </p>
+    <p>Tellus cras adipiscing enim eu turpis egestas pretium aenean.
+    Nisl tincidunt eget nullam non nisi est sit. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et.
+    Id ornare arcu odio ut sem. Orci phasellus egestas tellus rutrum. Aliquam id diam maecenas ultricies. Nam aliquam sem et tortor consequat.
+  </p>
+
+    </div><!-- end panel -->
+    <div class="fade"></div>
+  </div><!-- end panel-wrapper -->
+  <script>
+    $("button").click(function(){
+      $("p").hide(1000);
+    });
+  </script>
+  <div class="row" style = "padding: 100px">
+  <div class="column"  style="-webkit-filter: grayscale(100%); " >
+      <img src="architectural-design-architecture-buildings-2059146.jpg" style="width:100%">
+    <img src="4k-wallpaper-astronomy-evening-2085998.jpg" style="width:100%">
+    <img src="6e2176a1089142805c3eca4a8be20b2c.jpg" style="width:100%">
+    <img src="pexels-photo-1655898.jpeg" style="width:100%">
+
+
+  </div>
+
+  <div class="column" style="-webkit-filter: grayscale(100%);" >
+      <img src="aerial-photography-buildings-city-2096603.jpg" style="width:100%">
+    <img src="blaze-blazing-burning-2083454.jpg" style="width:100%">
+      <img src="9d660d7ae76ed49b0d7935a893df636b.jpg" style="width:100%">
+    <img src="8240f95c8e928af74820d6823bbde7b5.jpg" style="width:100%">
+
+
+  </div>
+
+  <div class="column" style="-webkit-filter: grayscale(100%);" >
+    <img src="calm-clean-h2o-2060492.jpg" style="width:100%">
+    <img src="pexels-photo-943903.jpeg" style="width:100%">
+    <img src="action-beach-blue-2127969.jpg" style="width:100%">
+    <img src="0aaa7fd25943d83329f85d2096029bc6.jpg" style="width:100%">
+
+
+  </div>
+
+  <div class="column"  style="-webkit-filter: grayscale(100%);" >
+    <img src="beautiful-branch-color-1334146.jpg" style="width:100%; ">
+    <img src="astronomy-galaxy-landscape-2055740.jpg" style="width:100%">
+    <img src="pexels-photo-289367.jpeg" style="width:100%">
+    <img src="blue-close-up-cold-2127667.jpg" style="width:100%">
+
+
+  </div>
+</div>
+
+<div class="header">
+  <h1>Table</h1>
+</div>
+<div class="form">
+<!--Table-->
+<table id="tablePreview" class="table table-striped" style="width: 90%">
+<!--Table head-->
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+      <th>Visits</th>
+      <th>Age</th>
+      <th>Country</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+      <th>Visits</th>
+      <th>Age</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <!--Table head-->
+  <!--Table body-->
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+  </tbody>
+  <!--Table body-->
+</table>
+<!--Table-->
+</div>
+
+  <h3 style = "font-weight: bold; text-align: center;   margin: 3% auto">CONTACT</h3>
+
+  <div class = "form1">
+    <form name="myForm" action="create.php" onsubmit="return validateForm()" method="post">
+
+
+      <label for="lname" style = "font-weight: bold">Name</label>
+      <input type="text" id="nm" name="name" placeholder="Name..">
+
+      <label for="lname" style = "font-weight: bold">Email</label>
+      <input type="text" id="ml" name="email" placeholder="Email..">
+
+      <label for="lname" style = "font-weight: bold">Message</label>
+      <input type="text" maxlength="140" id="ms" name="message" placeholder="Message..">
+
+
+
+
+
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>
+
+
+  <h3 style = "font-weight: bold; text-align: center;   margin: 3% auto">Drag and Drop</h3>
+
+  <div style="
+    display: flex;
+    padding-left:300px;
+    justify-content: center;
+    height:320px;
+
+    width: 1200px;  ">
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" >
+    <img src="dark-moon-sky-800x600.jpeg" draggable="true" ondragstart="drag(event)" id="drag1">
+  </div>
+
+  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+  </div>
+  <div style="padding-top:40px;"></div>
+
+  <div class="small-container" style="padding-bottom: 30px; width:600px; margin:auto;text-align: center;">
+    <h1 style="padding-bottom: 30px;">HTML Web Storage</h1>
+
+    <form action="index5.html">
+      <input type="submit" value="Go to page" />
+    </form>
+  </div>
+
+  <script src="functions.js"></script>
+<div>
+  <h1 style="padding-top: 100px; padding-bottom: 30px; margin-left:600px; width:300px">Web Worker</h1>
+
+
+  <div class="timer" id="timer"style=" padding-bottom: 50px; margin:auto;width:200px; font-size:60px">00:00</div>
+  <div class="buttons" style="padding-bottom: 30px; margin-left:550px;width:900px;">
+    <button class="btn btn-black" onclick="startTimer()" id="button1">Start</button>
+    <button class="btn btn-black"  onclick="stopTimer()" id = "button2">Stop</button>
+  </div>
+</div>
+  <script>
+
+    var w = null; // initialize variable
+
+    // function to start the timer
+    function startTimer()
+    {
+      // First check whether Web Workers are supported
+      if (typeof(Worker)!=="undefined"){
+        // Check whether Web Worker has been created. If not, create a new Web Worker based on the Javascript file simple-timer.js
+        if (w==null){
+          w = new Worker("simple-timer.js");
+        }
+        // Update timer div with output from Web Worker
+        w.onmessage = function (event) {
+          document.getElementById("timer").innerHTML = event.data;
+        };
+      } else {
+        // Web workers are not supported by your browser
+        document.getElementById("timer").innerHTML = "Sorry, your browser does not support Web Workers ...";
+      }
+    }
+
+    // function to stop the timer
+    function stopTimer()
+    {
+      w.terminate();
+      timerStart = true;
+      w = null;
+    }
+  </script>
+
+
+
+
+
+
+
+  <div class="aj" style="margin:auto; text-align: center; padding-top:150px">
+    <h1>AJAX</h1>
+    <div class="ajax_container">
+      <h2 id="blue" class="ajax_item">test_url: https://httpbin.org/get</h2>
+      <form class="ajax_item" name="ajax_form">
+        Endpoint: <input id="data_url" type="text" name="data_url" value="https://httpbin.org/get">
+      </form>
+      <div class="ajax_item">
+        <button class="btn btn-black" onclick="get_ajax('text')">Request_text</button>
+        <button class="btn btn-black" onclick="get_ajax('status')">Request_text</button>
+        <button class="btn btn-black" onclick="get_ajax('headers')">Request_text</button>
+
+
+      </div>
+      <div class="ajax_item" id="aj_cont"></div>
+    </div>
+  </div>
+  <script>
+    function get_ajax(data_type) {
+      data_url = document.forms["ajax_form"]["data_url"].value;
+      if (data_url === "") {
+        alert("data_url must be filled out");
+        return false;
+      }
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200) {
+          if (data_type === 'text') {
+            document.getElementById('aj_cont').innerHTML = this.responseText;
+          } else if (data_type === 'status') {
+            document.getElementById('aj_cont').innerHTML = this.statusText;
+          } else if (data_type === 'headers') {
+            document.getElementById('aj_cont').innerHTML = this.getAllResponseHeaders();
+          }
+        }
+      };
+      xhttp.open("GET", data_url, true);
+      xhttp.send();
+      return xhttp.responseText;
+    }
+  </script> <br>
+
+
+
+
+
+<div style="margin:auto; text-align: center; padding-top:150px">
+  <!--- JQuery Hide/Show FadeIn/Out -->
+  <div class="ptag">
+
+    <h1>JQuery Hide/Show</h1>
+    <div>
+      <button id="hide1" style="margin-bottom: 10px">Hide</button>
+      <button id="show1" style="margin-bottom: 10px">Show</button>
+    </div>
+    <img id="toggle" src="dark-moon-sky-800x600.jpeg" width="800" height="600">
+  </div>
+  <div class="ptag">
+    <h1>JQuery FadeIn/Out</h1>
+    <div>
+      <button id="fadeIn" style="margin-bottom: 10px">FadeIn</button>
+      <button id="fadeOut" style="margin-bottom: 10px">FadeOut</button>
+    </div>
+    <img id="toggle1" src="dark-moon-sky-800x600.jpeg" width="800" height="600">
+
+
+  </div> <br>
+  <!--- JQuery Slide Animate -->
+  <div class="ptige">
+    <h1>JQuery Slide</h1>
+    <div>
+      <button id="flip" style="margin-bottom: 10px">Click to slide the image</button>
+    </div>
+    <img id="panel" src="dark-moon-sky-800x600.jpeg" width="800" height="600">
+  </div>
+  <div class="ptag">
+    <h1>JQuery Animate</h1>
+    <div>
+      <button id="animate" style="margin-bottom: 10px">Animate</button>
+    </div>
+    <img id="animate1" src="dark-moon-sky-800x600.jpeg" width="800" height="600">
+
+
+  </div> <br>
+  <!--- JQuery Stop Callback -->
+  <div class="ptag">
+
+    <h1>JQuery Stop</h1>
+    <div>
+      <button id="stop" style="margin-bottom: 10px">Click to stop the animation</button>
+      <button id="start" style="margin-bottom: 10px">Click to start the animation</button>
+    </div>
+
+  </div>
+  <div class="ptag">
+    <h1>JQuery Callback</h1>
+    <div>
+      <button id="callback" style="margin-bottom: 10px">Callback</button>
+    </div>
+    <img id="callback1" src="dark-moon-sky-800x600.jpeg" width="800" height="600">
+
+  </div> <br>
+  <!--- JQuery StopChaining -->
+  <div class="ptag">
+
+    <h1>JQuery Chaining</h1>
+    <div>
+      <button id="chain" style="margin-bottom: 10px">Start chaining</button>
+    </div>
+    <img id="chain1" src="dark-moon-sky-800x600.jpeg" width="800" height="600">
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $("#hide1").click(function() {
+        $("#toggle").hide();
+      });
+      $("#show1").click(function() {
+        $("#toggle").show();
+      });
+    });
+    $(document).ready(function() {
+      $("#fadeIn").click(function() {
+        $("#toggle1").fadeIn("slow");
+      });
+      $("#fadeOut").click(function() {
+        $("#toggle1").fadeOut("slow");
+      });
+    });
+    $(document).ready(function() {
+      $("#flip").click(function() {
+        $("#panel").slideToggle("slow");
+      });
+    });
+    $(document).ready(function() {
+      $("#animate").click(function() {
+        var animation = $("#animate1");
+        animation.animate({ height: '50vh', opacity: '0.4' }, "slow");
+        animation.animate({ width: '75vh', opacity: '0.8' }, "slow");
+        animation.animate({ height: '35vh', opacity: '0.4' }, "slow");
+        animation.animate({ width: '50vh', opacity: '0.8' }, "slow");
+      });
+    });
+    $(document).ready(function() {
+      $("#start").click(function() {
+        $("#stop1").slideDown(4000);
+      });
+      $("#stop").click(function() {
+        $("#stop1").stop();
+      });
+    });
+    $(document).ready(function() {
+      $("#callback").click(function() {
+        $("#callback1").hide("slow", function() {
+          alert("The image is now hidden");
+        });
+      });
+    });
+    $(document).ready(function() {
+      $("#chain").click(function() {
+        $("#chain1").slideUp(2000).slideDown(2000);
+      });
+    });
+  </script>
+  <br>
+
+</div>
+
+
+
+
+  <!--- jQuery + AJAX + JSON -->
+  <div class="jAj">
+    <h1>jQuery + AJAX + JSON</h1>
+    <div class="json_content">
+      <a id="get_ip"><button style="margin-bottom: 10px">Get IP</button></a>
+      <div id="ip_div"></div>
+      <a id="get_headers"><button style="margin-bottom: 10px">Get headers</button></a>
+      <div id="headers_div"></div>
+      <a id="get_date"><button style="margin-bottom: 10px">Get date</button></a>
+      <div id="date_div"></div>
+      <a id="get_echo"><button style="margin-bottom: 10px">Get echo</button></a>
+      <div id="echo_div"></div>
+      <a id="get_valid"><button style="margin-bottom: 10px">Get validation</button></a>
+      <div id="valid_div"></div>
+      <a id="get_js_code"><button style="margin-bottom: 10px">Get js_code</button></a>
+      <div id="js_code_div"></div>
+      <a id="get_md5"><button style="margin-bottom: 10px">Get md5</button></a>
+      <div id="md5_div"></div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $("#get_ip").click(function() {
+        $.ajax({
+          url: "http://ip.jsontest.com/",
+          success: function(result) {
+            console.log(result);
+            $("#ip_div").text(result.ip);
+          }
+        });
+      });
+      $("#get_headers").click(function() {
+        $.ajax({
+          url: "http://headers.jsontest.com/",
+          success: function(result) {
+            console.log(result);
+            $("#headers_div").text(result["Accept-Language"]);
+          }
+        });
+      });
+      $("#get_date").click(function() {
+        $.ajax({
+          url: "http://date.jsontest.com",
+          success: function(result) {
+            console.log(result);
+            $("#date_div").text(result["date"]);
+          }
+        });
+      });
+      $("#get_echo").click(function() {
+        $.ajax({
+          url: "http://echo.jsontest.com/me/Liliia Ryvak/",
+          success: function(result) {
+            console.log(result);
+            $("#echo_div").text(result["me"]);
+          }
+        });
+      });
+      $("#get_valid").click(function() {
+        $.ajax({
+          url: 'http://validate.jsontest.com/?json={"key":"value"}',
+          success: function(result) {
+            console.log(result);
+            $("#valid_div").text(result["object_or_array"]);
+          }
+        });
+      });
+      $("#get_js_code").click(function() {
+        $.ajax({ url: 'http://code.jsontest.com', dataType: 'jsonp' });
+      });
+      $("#get_md5").click(function() {
+        $.ajax({
+          url: 'http://md5.jsontest.com/?text=example_text',
+          success: function(result) {
+            console.log(result);
+            res = JSON.stringify(result);
+            $("#md5_div").text(res);
+          }
+        });
+      });
+    });
+  </script>
+
+
+
+
+  <footer class="footer">
+  <div class="container text-center">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-google-plus"></i></a>
+    <a href="#"><i class="fab fa-pinterest"></i></a>
+  </div>
+</footer>
+
+
+
+
+<a href="#" class="float">
+
+<i class="fa fa-phone my-float"></i>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    function validateEmail(ml) {
+      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(String(ml).toLowerCase());
+    }
+    function inputAlphabet(inputtext){
+      var alphaExp = /^[A-Za-z\s]+$/;
+      return alphaExp.test(String(inputtext).toLowerCase());
+
+    }
+    function validateForm() {
+      var x = document.forms["myForm"]["name"].value;
+      var y = document.forms["myForm"]["email"].value;
+      var z = document.forms["myForm"]["message"].value;
+
+
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+      if (y == "") {
+        alert("Email must be filled out");
+        return false;
+      }
+      if (z == "") {
+        alert("Message must be filled out");
+        return false;
+      }
+      if (!(validateEmail(y))) {
+
+        alert("Email is not valid");
+        return false;
+
+      }
+      if((x.length) < 4){
+        alert("Name must be longer than 3 symbols");
+        return false;
+      }
+      if(!(inputAlphabet(x))){
+
+        alert("Name can include only alphanumeric character");
+        return false;
+      }
+
+
+
+      return false;
+    }
+
+
+
+  </script>
+
+
+
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+
+    </script>
+  </body>
