@@ -1,0 +1,193 @@
+.carousel-item {
+  height: 85vh;
+  min-height: 350px;
+
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+*{padding:0;margin:0;}
+
+body{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	background-color:#F5F5F5;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+  background: #000;  /* fallback for old browsers */
+
+
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:22px;
+}
+a {
+   text-decoration:none;
+   color: inherit;
+}
+
+* {box-sizing: border-box;}
+$bg-color: rgb(204, 204, 204);
+
+
+header {
+  background-color: rgba(0,0,0,.5);
+  font-size: 1.5em;
+  text-align: center;
+  padding: 1em;
+  padding-top:1em;
+}
+
+.panel-wrapper {
+  position: relative;
+}
+
+.btn {
+  color: #fff;
+  background: #000;
+  border-radius: 1.5em;
+  left: 40%;
+  padding: 1em;
+  text-decoration: none;
+  width: 20%;
+}
+.show, .hide {
+  position: absolute;
+  bottom: -1em;
+  z-index: 100;
+  text-align: center;
+}
+
+.hide {display: none;}
+.show:target {display: none;}
+.show:target ~ .hide {display: block;}
+.show:target ~ .panel {
+   max-height: 2000px;
+}
+.show:target ~ .fade {
+  margin-top: 20;
+}
+
+.panel {
+
+  position: relative;
+  margin: 2em auto;
+  width: 80%;
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height .5s ease;
+}
+.panel1 {
+
+  position: relative;
+  margin: 2em auto;
+  width: 80%;
+
+  overflow: hidden;
+  transition: max-height .5s ease;
+}
+
+.fade {
+  background: linear-gradient(to bottom, rgba($bg-color,0) 0%,rgba($bg-color,1) 75%);
+  height: 100px;
+  margin-top: -100px;
+  position: relative;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding: 0 4px;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+
+}
+.frame {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: flex-start;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.form{
+  display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+}
+#map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+
+       .footer {
+         background: #061D25;
+         padding: 10px 0;
+       }
+       .footer a {
+         color: #70726F;
+         font-size: 20px;
+         padding: 10px;
+         border-right: 1px solid #70726F;
+         transition: all .5s ease;
+       }
+       .footer a:first-child {
+         border-left: 1px solid #70726F;
+       }
+       .footer a:hover {
+         color: white;
+       }
